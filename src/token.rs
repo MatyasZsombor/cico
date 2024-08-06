@@ -6,30 +6,30 @@ pub enum TokenType
     Number,
     Char,
 
-    Plus,
-    Minus,
-    Times,
+    Plus, //
+    Minus, //
+    Times, //
     Slash,
-    Rem,
-    Eql,
-    Neq,
-    Lss,
-    Leq,
-    Gtr,
-    Geq,
-    And,
-    Or,
-    Assign,
-    Pplus,
-    Mminus,
-    Comma,
-    Period,
-    Lpar,
-    Rpar,
-    Lbrack,
-    Rbrack,
-    Lbrace,
-    Rbrace,
+    Rem, //
+    Eql, //
+    Neq, //
+    Lss, //
+    Leq, //
+    Gtr, //
+    Geq, //
+    And, //
+    Or, //
+    Assign, //
+    Pplus, //
+    Mminus, //
+    Comma, //
+    Period, //
+    Lpar, //
+    Rpar, //
+    Lbrack, //
+    Rbrack, //
+    Lbrace, //
+    Rbrace, //
 
     Break,
     Struct,
@@ -42,11 +42,10 @@ pub enum TokenType
     While
 }
 
-pub struct Token<'a>
+pub struct Token
 {
     pub token_type: TokenType,
     pub line: i32,
     pub col: i32,
-    pub val: &'a str,
-    pub num_val: i32
+    pub val: String,
 }
