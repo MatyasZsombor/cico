@@ -1,10 +1,11 @@
+#[derive(PartialEq, Debug)]
 pub enum TokenType
 {
     None,
 
     Ident,
     Number,
-    Char,
+    Eof,
 
     Plus, //
     Minus, //
@@ -22,6 +23,7 @@ pub enum TokenType
     Assign, //
     Pplus, //
     Mminus, //
+    Semicolon, //
     Comma, //
     Period, //
     Lpar, //
@@ -42,6 +44,7 @@ pub enum TokenType
     While
 }
 
+#[derive(PartialEq, Debug)]
 pub struct Token
 {
     pub token_type: TokenType,
